@@ -59,16 +59,13 @@ app.post("/login/", (request, response) => {
         response.redirect("/error")
     }
     else if (inputEmail === "user@email.com" && inputPW === "very-secret") {
-        response.json({ success: true });
+        // response.json({ success: true });
         response.redirect("/myaccount")
     } else {
         // response.json({ success: false });
         response.redirect("/error")
     }
 })
-
-
-
 
 
 // response.send(path.join(directoryName, "/error.html"))
